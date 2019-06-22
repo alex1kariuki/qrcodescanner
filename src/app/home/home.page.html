@@ -4,20 +4,23 @@
   <!-- Content on the home page -->
   <p id="qr-title">Scan QR Code</p>
   <p id="qr-description">Align the qr code on the space below to scan the qr code.</p>
-</ion-content>
 
-<ion-footer>
-  <ion-toolbar>
-    <ion-tabs>
-      <!-- Tab bar -->
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button class="scanQr">
-          <p>Scan Code</p>
-        </ion-tab-button>
-        <ion-tab-button class="enterCode">
-          <p>Enter Code</p>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
-</ion-footer>
+
+  <!-- Bottom sheet -->
+  <div id="bottom-div">
+    <ion-toolbar class="bottom-sheet">
+      <ion-tabs>
+        <!-- Tab bar -->
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button class="scanQr">
+            <p>Scan Code</p>
+          </ion-tab-button>
+          <ion-tab-button class="enterCode">
+            <p>Enter Code</p>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </div>
+ 
+</ion-content>

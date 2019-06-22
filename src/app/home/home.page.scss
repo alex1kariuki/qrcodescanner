@@ -6,6 +6,7 @@
     height: 30px;
     width: 30px;
     margin: 20px;
+    margin-top: 40px;
 }
 #qr-title{
     text-align: center;
@@ -27,4 +28,13 @@
     background-color: lightgray;
     color: white;
     font-size: 18px;
+}
+.bottom-sheet{
+    position: absolute;
+   margin-right: 20px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+#bottom-div{
+    margin-right: 60px;
 }
