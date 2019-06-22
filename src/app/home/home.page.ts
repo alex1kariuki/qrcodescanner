@@ -7,10 +7,20 @@ import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner/ngx';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  title: string;
+  description: string;
+  codeInput: boolean;
 
-  constructor(private qrScanner: QRScanner) { }
+  constructor(private qrScanner: QRScanner) {
+    this.title = 'Scan QR Code';
+    this.description = 'Align the qr code on the space below to scan the qr code.';
+    this.codeInput = false;
+  }
 
   scanQr() {
+    this.title = 'Scan QR Code';
+    this.description = 'Align the qr code on the space below to scan the qr code.';
+    this.codeInput = false;
     // Optionally request the permission early
     this.qrScanner.prepare()
       .then((status: QRScannerStatus) => {
@@ -40,5 +50,9 @@ export class HomePage {
   refresh() {
     window.location.reload();
   }
-
+  enterCode() {
+    this.title = 'Enter code in the QR';
+    this.description = 'Please enter the booking ID below';
+    this.codeInput = true;
+  }
 }
