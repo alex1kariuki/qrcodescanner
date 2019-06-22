@@ -42,10 +42,12 @@ export class AppComponent {
       // start camera
       this.cameraPreview.startCamera(cameraPreviewOpts).then(
         (res) => {
+          console.log('SUCCESS!!');
           console.log(res);
         },
         (err) => {
           console.log(err);
+          console.log('FAILED!!');
         });
     });
   }
