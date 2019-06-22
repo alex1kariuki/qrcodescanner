@@ -1,2 +1,2 @@
 # qrcodescanner
-This is a qr code scanner built in ionic.
+This is a qr code scanner built with ionic.
