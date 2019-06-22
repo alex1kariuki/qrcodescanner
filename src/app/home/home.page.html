@@ -2,22 +2,30 @@
   <ion-icon name="close-circle-outline" class="close"></ion-icon>
 
   <!-- Content on the home page -->
-  <p id="qr-title">Scan QR Code</p>
-  <p id="qr-description">Align the qr code on the space below to scan the qr code.</p>
-</ion-content>
+  <p id="qr-title">{{title}}</p>
+  <p id="qr-description">{{description}}</p>
 
-<ion-footer>
-  <ion-toolbar>
-    <ion-tabs>
-      <!-- Tab bar -->
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button class="scanQr">
-          <p>Scan Code</p>
-        </ion-tab-button>
-        <ion-tab-button class="enterCode">
-          <p>Enter Code</p>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
-</ion-footer>
+  <!-- Code input -->
+  <ion-item *ngIf="codeInput" id="rounded">
+    <ion-input type="text" [(ngModel)]="qrCode" placeholder="Enter QR code"></ion-input>
+  </ion-item>
+
+
+  <!-- Bottom sheet -->
+  <div id="bottom-div">
+    <ion-toolbar class="bottom-sheet">
+      <ion-tabs>
+        <!-- Tab bar -->
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button class="scanQr" (click)="scanQr()">
+            <p>Scan Code</p>
+          </ion-tab-button>
+          <ion-tab-button class="enterCode" (click)="enterCode()">
+            <p>Enter Code</p>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </div>
+
+</ion-content>

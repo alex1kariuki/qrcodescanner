@@ -6,6 +6,7 @@
     height: 30px;
     width: 30px;
     margin: 20px;
+    margin-top: 40px;
 }
 #qr-title{
     text-align: center;
@@ -19,7 +20,7 @@
     margin: 20px;
 }
 .scanQr{
-    background-color: lightgray;
+    background-color: rgb(16, 146, 197);
     color: white;
     font-size: 18px;
 }
@@ -27,4 +28,22 @@
     background-color: lightgray;
     color: white;
     font-size: 18px;
+}
+.bottom-sheet{
+    position: absolute;
+   margin-right: 20px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+#bottom-div{
+    margin-right: 60px;
+}
+#rounded {
+    width: 100%;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgb(177, 177, 177);
+    color: black;
+    margin-right: 20px;
+
 }
