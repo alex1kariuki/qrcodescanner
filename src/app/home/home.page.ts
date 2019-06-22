@@ -37,5 +37,8 @@ export class HomePage {
       .catch((e: any) => console.log('Error is', e));
 
   }
+  refresh() {
+    window.location.reload();
+  }
 
 }
